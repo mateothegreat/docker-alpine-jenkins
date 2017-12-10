@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+    master:
+        container_name: jenkins-master
+        image: 'appsoa/docker-alpine-jenkins:1.0.0'
+        ports:
+            - '8080:8080'
+            - '50001:50001'
+        volumes:
+            - '$PWD/jenkins_home:/var/jenkins_home'
+        restart: always
