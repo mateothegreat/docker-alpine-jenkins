@@ -3,7 +3,8 @@
 #
 FROM jenkins/jenkins:2.105-alpine AS base
 
-USER jenkins
+# For kubernetes permission errors
+USER root
 
 VOLUME [ "/var/jenkins_home" ]
 
