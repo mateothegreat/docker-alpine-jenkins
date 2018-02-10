@@ -1,7 +1,7 @@
 #
 # Derives from https://github.com/jenkinsci/docker/blob/master/Dockerfile-alpine
 #
-FROM jenkins/jenkins:lts-alpine AS base
+FROM jenkins/jenkins:2.105-alpine AS base
 
 USER jenkins
 
