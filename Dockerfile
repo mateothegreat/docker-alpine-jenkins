@@ -1,7 +1,7 @@
 #
 # Derives from https://github.com/jenkinsci/docker/blob/master/Dockerfile-alpine
 #
-FROM jenkins/jenkins:2.60.3-alpine AS base
+FROM jenkins/jenkins:2.136-alpine AS base
 
 # For kubernetes permission errors
 USER root
