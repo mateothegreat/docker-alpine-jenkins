@@ -1,8 +1,8 @@
-version: '3.4'
+version: '3.7'
 services:
     master:
         container_name: jenkins-master
-        image: 'appsoa/docker-alpine-jenkins:latest'
+        image: mateothegreat/docker-alpine-jenkins:latest
         ports:
             - '8080:8080'
             - '50001:50001'
